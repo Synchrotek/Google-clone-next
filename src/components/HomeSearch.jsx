@@ -36,7 +36,7 @@ export default function Homeearch() {
       <BsFillMicFill className="text-lg" />
     </form>
 
-    <div className="flex flex-col space-y-2 sm:space-y-0 sm:space-x-4">
+    <div className="flex flex-col sm:flex-row mt-3 space-y-2 sm:space-y-0 sm:space-x-4">
       <button className="btn"
         onClick={handleSubmit}
       >Google Search</button>

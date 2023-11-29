@@ -14,7 +14,7 @@ export default function Homeearch() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!input.trim()) return;
-    router.push(`/serach/web?searchTerm=${input}`);
+    router.push(`/search/web?searchTerm=${input}`);
   }
   const randomSearch = async () => {
     setRandomSearchLoading(true);
@@ -22,7 +22,7 @@ export default function Homeearch() {
       .then((res) => res.json())
       .then((data) => data[0]);
     if (!response) return;
-    router.push(`/serach/web?searchTerm=${response}`);
+    router.push(`/search/web?searchTerm=${response}`);
     setRandomSearchLoading(false);
   }
 

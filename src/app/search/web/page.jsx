@@ -14,7 +14,7 @@ export default async function WebSearchPage({ searchParams }) {
     }
 
     const data = await response.json();
-    console.log("Fetched the Google-API Again");
+    console.log("Fetched the Google-API Again For Web");
 
     const results = data.items;
 
